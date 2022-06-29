@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPane" prefHeight="722.0" prefWidth="710.0" style="-fx-background-color: #1e90ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentBookHostelMenuController">
+   <children>
+      <ScrollPane prefHeight="722.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="710.0">
+               <children>
+                  <AnchorPane layoutX="13.0" layoutY="31.0" prefHeight="60.0" prefWidth="684.0" style="-fx-background-color: #ecf0f1;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="31.0">
+                     <children>
+                        <Label layoutX="24.0" layoutY="41.0" text="Room number" />
+                        <Label layoutX="274.0" layoutY="41.0" text="Start date" />
+                        <Label layoutX="561.0" layoutY="41.0" text="Seater" />
+                        <ComboBox layoutX="15.0" layoutY="16.0" prefWidth="150.0" />
+                        <ComboBox layoutX="520.0" layoutY="14.0" prefWidth="150.0" />
+                        <DatePicker layoutX="248.0" layoutY="16.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="29.0" layoutY="14.0" text="Hostel Booking" textFill="#2717b5">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></Label>
+                  <AnchorPane layoutX="13.0" layoutY="91.0" prefHeight="60.0" prefWidth="684.0" style="-fx-background-color: #ecf0f1;">
+                     <children>
+                        <Label layoutX="23.0" layoutY="57.0" text="Total duration" />
+                        <Label layoutX="179.0" layoutY="16.0" text="food status" />
+                        <Label layoutX="370.0" layoutY="55.0" text="total fees per month" />
+                        <ComboBox layoutX="14.0" layoutY="21.0" prefHeight="25.0" prefWidth="149.0" />
+                        <TextField layoutX="349.0" layoutY="24.0" />
+                        <RadioButton layoutX="249.0" layoutY="28.0" mnemonicParsing="false" text="Required">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="food" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton layoutX="249.0" layoutY="53.0" mnemonicParsing="false" selected="true" text="Not Required" toggleGroup="$food" />
+                        <Label layoutX="532.0" layoutY="55.0" text="total Amount" />
+                        <TextField layoutX="521.0" layoutY="24.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="42.0" layoutY="180.0" text="Student's Personal information" />
+                  <AnchorPane layoutX="13.0" layoutY="598.0" prefHeight="63.0" prefWidth="684.0" style="-fx-background-color: #ecf0f1;">
+                     <children>
+                        <Label layoutX="23.0" layoutY="57.0" />
+                        <Label layoutX="34.0" layoutY="45.0" text="guardian name" />
+                        <TextField layoutX="14.0" layoutY="14.0" />
+                        <Label layoutX="196.0" layoutY="45.0" text="relation" />
+                        <TextField layoutX="185.0" layoutY="14.0" />
+                        <Label layoutX="370.0" layoutY="46.0" text="contract number" />
+                        <TextField layoutX="350.0" layoutY="15.0" />
+                        <Label layoutX="532.0" layoutY="46.0" text="visit tele number" />
+                        <TextField layoutX="521.0" layoutY="15.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="42.0" layoutY="581.0" text="guardian information" />
+                  <VBox layoutX="29.0" layoutY="189.0" prefHeight="393.0" prefWidth="653.0" stylesheets="@../asserts/styles/CustomerForm.css" AnchorPane.bottomAnchor="618.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="189.0">
+                     <children>
+                        <AnchorPane prefHeight="42.0" prefWidth="508.0" styleClass="textPane">
+                           <children>
+                              <TextField fx:id="txtCusID" layoutX="151.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="360.0" promptText="C00-001" styleClass="textField" AnchorPane.bottomAnchor="6.0" AnchorPane.topAnchor="8.0" />
+                              <Label layoutX="14.0" layoutY="13.0" styleClass="textLabel" text="Student_ID" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="20.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+                           <children>
+                              <TextField fx:id="txtCusName" layoutX="152.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="360.0" promptText="Chamith Dilshan" styleClass="textField" AnchorPane.bottomAnchor="6.0" AnchorPane.topAnchor="8.0" />
+                              <Label layoutX="14.0" layoutY="13.0" styleClass="textLabel" text="Student_Name" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+                           <children>
+                              <TextField fx:id="txtCusAddress" layoutX="152.0" layoutY="4.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="360.0" promptText="Colombo 7" styleClass="textField" AnchorPane.topAnchor="8.0" />
+                              <Label layoutX="14.0" layoutY="13.0" styleClass="textLabel" text="Student_Address" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+                           <children>
+                              <TextField fx:id="txtCusContract" layoutX="151.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="360.0" promptText="07*-1234567" styleClass="textField" AnchorPane.topAnchor="8.0" />
+                              <Label layoutX="14.0" layoutY="13.0" styleClass="textLabel" text="Student_Contract" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="42.0" prefWidth="667.0" styleClass="textPane">
+                           <children>
+                              <TextField fx:id="txtCusDOB" layoutX="152.0" layoutY="5.0" onKeyReleased="#textFields_Key_Released" prefHeight="34.0" prefWidth="360.0" promptText="23-05-2000" styleClass="textField" />
+                              <Label layoutX="14.0" layoutY="13.0" styleClass="textLabel" text="Student_Date_Of_Birth" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="20.0" prefWidth="653.0" styleClass="textPane">
+                           <children>
+                              <TextField fx:id="txtCusGender" layoutX="151.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="360.0" promptText="Male" styleClass="textField" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="156.0" AnchorPane.topAnchor="8.0" />
+                              <Label layoutX="14.0" layoutY="13.0" styleClass="textLabel" text="Student_Gender" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="btnSaveStu" layoutX="212.0" layoutY="681.0" prefHeight="37.0" prefWidth="287.0" style="-fx-background-color: #dfe6e9;" styleClass="btn" text="Submit">
+                     <font>
+                        <Font name="Cambria Math" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <TableView fx:id="tblStudent" layoutX="13.0" layoutY="727.0" prefHeight="235.0" prefWidth="684.0" AnchorPane.bottomAnchor="38.0">
+                     <columns>
+                        <TableColumn fx:id="colCusId" prefWidth="84.0" text="ID" />
+                        <TableColumn fx:id="colCusName" prefWidth="101.0" text="Name" />
+                        <TableColumn fx:id="colCusAddress" prefWidth="110.0" text="Address" />
+                        <TableColumn fx:id="colCusContract" prefWidth="114.0" text="Contract" />
+                        <TableColumn fx:id="colCusDOB" prefWidth="104.0" text="DOB" />
+                        <TableColumn fx:id="colCusGender" prefWidth="90.0" text="Gender" />
+                        <TableColumn fx:id="colCusBtn" text="edit" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="722.0" prefWidth="710.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHostelStudentMenuController">
+   <children>
+      <TableView layoutX="22.0" layoutY="68.0" prefHeight="287.0" prefWidth="667.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Reg_No" />
+          <TableColumn prefWidth="94.0" text="Student_Name" />
+            <TableColumn prefWidth="78.0" text="Room No" />
+            <TableColumn prefWidth="88.0" text="Seater" />
+            <TableColumn prefWidth="140.0" text="Staying_From" />
+            <TableColumn prefWidth="98.0" text="Contract" />
+            <TableColumn minWidth="8.0" prefWidth="93.0" text="Option" />
+        </columns>
+      </TableView>
+      <Label layoutX="453.0" layoutY="20.0" prefHeight="28.0" prefWidth="47.0" text="Search :" />
+      <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="649.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/log%20Out.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="500.0" layoutY="22.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="StudentDashBoardContext" prefHeight="637.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="772.0" prefWidth="297.0" style="-fx-background-color: #ecf0f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="27.0" layoutY="71.0" prefHeight="65.0" prefWidth="260.0" text="Dash Board" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="29.0" />
+               </font>
+            </Label>
+            <Separator layoutX="7.0" layoutY="126.0" prefHeight="2.0" prefWidth="280.0" />
+            <Label layoutX="79.0" layoutY="23.0" text="Hostel Manegement">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="62.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/dashboaard.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="27.0" layoutY="136.0" text="Features">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="164.0" prefHeight="65.0" prefWidth="260.0" text="Register Student" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="229.0" prefHeight="65.0" prefWidth="270.0" text="View Student Accounts" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="294.0" prefHeight="65.0" prefWidth="280.0" text="Book Hostel" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="22.0" layoutY="91.0" mnemonicParsing="false" onAction="#openAdminDashbord" opacity="0.17" prefHeight="29.0" prefWidth="195.0" />
+            <Button layoutX="12.0" layoutY="182.0" mnemonicParsing="false" onAction="#openRegisterStudent" opacity="0.17" prefHeight="29.0" prefWidth="260.0" />
+            <Button layoutX="12.0" layoutY="247.0" mnemonicParsing="false" onAction="#openViewStudentAccounts" opacity="0.17" prefHeight="29.0" prefWidth="260.0" />
+            <Button layoutX="17.0" layoutY="312.0" mnemonicParsing="false" onAction="#openBookHostel" opacity="0.17" prefHeight="29.0" prefWidth="260.0" />
+            <Label layoutX="27.0" layoutY="335.0" prefHeight="65.0" prefWidth="260.0" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="351.0" prefHeight="65.0" prefWidth="270.0" text="Hostel Student" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="406.0" prefHeight="65.0" prefWidth="270.0" text="Manage Room" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="471.0" prefHeight="65.0" prefWidth="270.0" text="Manage Courses" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="12.0" layoutY="369.0" mnemonicParsing="false" onAction="#openHostelStudent" opacity="0.17" prefHeight="29.0" prefWidth="260.0" />
+            <Button layoutX="17.0" layoutY="424.0" mnemonicParsing="false" onAction="#openManageRoom" opacity="0.17" prefHeight="29.0" prefWidth="260.0" />
+            <Button layoutX="12.0" layoutY="489.0" mnemonicParsing="false" onAction="#openManageCourses" opacity="0.17" prefHeight="29.0" prefWidth="260.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="297.0" prefHeight="79.0" prefWidth="710.0" style="-fx-background-color: #bdc3c7;">
+         <children>
+            <JFXButton alignment="CENTER_RIGHT" layoutX="586.0" onAction="#repLogOutOnAction" prefHeight="47.0" prefWidth="116.0" text="Log Out" textFill="#e80c0c">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="594.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/log%20Out.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="27.0" layoutY="26.0" text="Welcome, Admin ! ">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="StudentContext" layoutX="297.0" layoutY="79.0" prefHeight="722.0" prefWidth="710.0" style="-fx-background-color: #54a0ff;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="23.0" prefHeight="65.0" prefWidth="154.0" style="-fx-background-color: #ecf0f1;">
+               <children>
+                  <Label layoutX="23.0" layoutY="57.0" text="Resgistered Student" />
+                  <Label layoutX="14.0" layoutY="20.0" prefHeight="28.0" prefWidth="54.0" text="114">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="524.0" layoutY="23.0" prefHeight="75.0" prefWidth="154.0" style="-fx-background-color: #ecf0f1;">
+               <children>
+                  <Label layoutX="23.0" layoutY="62.0" text="Feature Courses" />
+                  <Label layoutX="30.0" layoutY="20.0" prefHeight="28.0" prefWidth="54.0" text="5">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="190.0" layoutY="23.0" prefHeight="75.0" prefWidth="154.0" style="-fx-background-color: #ecf0f1;">
+               <children>
+                  <Label layoutX="22.0" layoutY="58.0" text="Toatal Rooms" />
+                  <Label layoutX="14.0" layoutY="21.0" prefHeight="28.0" prefWidth="54.0" text="250">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="359.0" layoutY="23.0" prefHeight="75.0" prefWidth="154.0" style="-fx-background-color: #ecf0f1;">
+               <children>
+                  <Label layoutX="19.0" layoutY="61.0" text="Booked Rooms" />
+                  <Label layoutX="33.0" layoutY="22.0" prefHeight="28.0" prefWidth="54.0" text="106">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="StuLastActiveTbl" layoutX="24.0" layoutY="172.0" prefHeight="523.0" prefWidth="662.0">
+              <columns>
+                <TableColumn fx:id="colNumber" prefWidth="123.0" text="#" />
+                <TableColumn fx:id="colStuRegNo" prefWidth="260.0" text="Student_Reg_No" />
+                  <TableColumn fx:id="colLastActive" prefWidth="278.0" text="Last Activity" />
+              </columns>
+            </TableView>
+            <TextField layoutX="486.0" layoutY="123.0" prefHeight="25.0" prefWidth="195.0" />
+            <Label layoutX="436.0" layoutY="127.0" text="Search :" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

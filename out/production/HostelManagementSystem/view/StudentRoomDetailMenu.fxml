@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="722.0" prefWidth="710.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentRoomDetailMenuController">
+   <children>
+      <TextField layoutX="10.0" layoutY="430.0" prefHeight="40.0" prefWidth="115.0" text="contract" />
+      <TextField layoutX="125.0" layoutY="430.0" prefHeight="40.0" prefWidth="115.0" />
+      <TextField layoutX="125.0" layoutY="387.0" prefHeight="40.0" prefWidth="115.0" />
+      <TextField layoutX="10.0" layoutY="387.0" prefHeight="40.0" prefWidth="115.0" text="registation number" />
+      <TextField layoutX="240.0" layoutY="430.0" prefHeight="40.0" prefWidth="115.0" text="Gender" />
+      <TextField layoutX="355.0" layoutY="430.0" prefHeight="40.0" prefWidth="115.0" />
+      <TextField layoutX="355.0" layoutY="387.0" prefHeight="40.0" prefWidth="115.0" />
+      <TextField layoutX="240.0" layoutY="387.0" prefHeight="40.0" prefWidth="115.0" text="first name" />
+      <TextField layoutX="470.0" layoutY="430.0" prefHeight="40.0" prefWidth="115.0" text="Address" />
+      <TextField layoutX="585.0" layoutY="430.0" prefHeight="40.0" prefWidth="115.0" />
+      <TextField layoutX="585.0" layoutY="387.0" prefHeight="40.0" prefWidth="115.0" />
+      <TextField layoutX="470.0" layoutY="387.0" prefHeight="40.0" prefWidth="115.0" text="last name" />
+      <TextField layoutX="10.0" layoutY="513.0" prefHeight="40.0" prefWidth="115.0" text="guardian contract number" />
+      <TextField layoutX="125.0" layoutY="513.0" prefHeight="40.0" prefWidth="230.0" />
+      <TextField layoutX="125.0" layoutY="471.0" prefHeight="40.0" prefWidth="230.0" />
+      <TextField layoutX="10.0" layoutY="471.0" prefHeight="40.0" prefWidth="115.0" text="guardian name" />
+      <TextField layoutX="355.0" layoutY="513.0" prefHeight="40.0" prefWidth="115.0" text="visit tele nmber" />
+      <TextField layoutX="470.0" layoutY="513.0" prefHeight="40.0" prefWidth="230.0" />
+      <TextField layoutX="470.0" layoutY="471.0" prefHeight="40.0" prefWidth="230.0" />
+      <TextField layoutX="355.0" layoutY="471.0" prefHeight="40.0" prefWidth="115.0" text="guardian relation" />
+      <TableView layoutX="6.0" layoutY="84.0" prefHeight="200.0" prefWidth="699.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Room number" />
+          <TableColumn prefWidth="95.0" text="Room_type" />
+            <TableColumn prefWidth="118.0" text="StatupDate" />
+            <TableColumn prefWidth="106.0" text="TotalDuration" />
+            <TableColumn prefWidth="84.0" text="Food_Status" />
+            <TableColumn prefWidth="129.0" text="total fees per month" />
+            <TableColumn prefWidth="91.0" text="Total_fee" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="59.0" text="My Room Details" />
+      <Label layoutX="14.0" layoutY="361.0" text="Aded My Room Personal Data" />
+   </children>
+</AnchorPane>

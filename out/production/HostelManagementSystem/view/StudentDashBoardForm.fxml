@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminDashBoardContext" prefHeight="637.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentDashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="653.0" prefWidth="287.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Label layoutX="27.0" layoutY="71.0" prefHeight="65.0" prefWidth="260.0" text="Dash Board" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="29.0" />
+               </font>
+            </Label>
+            <Separator layoutX="7.0" layoutY="126.0" prefHeight="2.0" prefWidth="280.0" />
+            <Label layoutX="79.0" layoutY="23.0" text="Hostel Manegement">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="62.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/dashboaard.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="27.0" layoutY="136.0" text="Features">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="164.0" prefHeight="65.0" prefWidth="260.0" text="Book Hostel" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="229.0" prefHeight="65.0" prefWidth="260.0" text="My Room Deatails" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="294.0" prefHeight="65.0" prefWidth="270.0" text="Log Activities" textFill="#511212">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="22.0" layoutY="91.0" mnemonicParsing="false" onAction="#openAdminDashbord" opacity="0.17" prefHeight="29.0" prefWidth="195.0" />
+            <Button layoutX="17.0" layoutY="183.0" mnemonicParsing="false" onAction="#openAdminBookHostel" opacity="0.17" prefHeight="29.0" prefWidth="195.0" />
+            <Button layoutX="29.0" layoutY="245.0" mnemonicParsing="false" onAction="#openAdminMyRoomDetail" opacity="0.17" prefHeight="29.0" prefWidth="195.0" />
+            <Button layoutX="25.0" layoutY="306.0" mnemonicParsing="false" onAction="#OpenAdminLogActivity" opacity="0.17" prefHeight="29.0" prefWidth="195.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="297.0" prefHeight="79.0" prefWidth="710.0" style="-fx-background-color: #bdc3c7;">
+         <children>
+            <JFXButton alignment="CENTER_RIGHT" layoutX="586.0" onAction="#adminLogOutOnAction" prefHeight="47.0" prefWidth="116.0" text="Log Out" textFill="#e80c0c">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="594.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/log%20Out.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="26.0" text="Wellcome , Student!">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="adminContext" layoutX="297.0" layoutY="79.0" prefHeight="574.0" prefWidth="710.0" style="-fx-background-color: #54a0ff;">
+         <children>
+            <AnchorPane layoutX="28.0" layoutY="35.0" prefHeight="98.0" prefWidth="214.0" style="-fx-background-color: #ecf0f1;">
+               <children>
+                  <Label layoutX="23.0" layoutY="57.0" text="Resgistered Student" />
+                  <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="158.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/log%20Out.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" layoutY="14.0" prefHeight="28.0" prefWidth="54.0" text="114">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="252.0" layoutY="149.0" prefHeight="98.0" prefWidth="214.0" style="-fx-background-color: #ecf0f1;">
+               <children>
+                  <Label layoutX="14.0" layoutY="54.0" text="Feature Courses" />
+                  <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="160.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/log%20Out.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="17.0" prefHeight="28.0" prefWidth="54.0" text="5">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="252.0" layoutY="35.0" prefHeight="98.0" prefWidth="214.0" style="-fx-background-color: #ecf0f1;">
+               <children>
+                  <Label layoutX="22.0" layoutY="58.0" text="Toatal Rooms" />
+                  <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="165.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/log%20Out.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="21.0" prefHeight="28.0" prefWidth="54.0" text="250">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="28.0" layoutY="149.0" prefHeight="98.0" prefWidth="214.0" style="-fx-background-color: #ecf0f1;">
+               <children>
+                  <Label layoutX="26.0" layoutY="52.0" text="Booked Rooms" />
+                  <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="158.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/log%20Out.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="32.0" layoutY="10.0" prefHeight="28.0" prefWidth="54.0" text="106">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="54.0" fitWidth="76.0" layoutX="93.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/rooms.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="92.0" layoutX="220.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/meals.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="47.0" layoutX="347.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/incoms.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="69.0" layoutY="313.0" prefHeight="134.0" prefWidth="102.0" style="-fx-background-color: #ecf0f1;" text="Rooms">
+               <font>
+                  <Font name="Bell MT" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="196.0" layoutY="313.0" prefHeight="134.0" prefWidth="102.0" style="-fx-background-color: #ecf0f1;" text="Meals">
+               <font>
+                  <Font name="Bell MT" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="319.0" layoutY="313.0" prefHeight="134.0" prefWidth="102.0" style="-fx-background-color: #ecf0f1;" text="Incoms">
+               <font>
+                  <Font name="Bell MT" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

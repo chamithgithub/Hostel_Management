@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="receptionistLoginContext" prefHeight="550.0" prefWidth="836.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginFormController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="548.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="581.0" layoutY="177.0" text="Admin Login" textFill="#5100dd">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="442.0" layoutY="242.0" prefHeight="281.0" prefWidth="313.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="37.0">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="61.0" layoutX="8.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="39.0" layoutX="19.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../asserts/password%20key.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="repUserName" alignment="CENTER" labelFloat="true" layoutX="69.0" layoutY="36.0" onAction="#moveToPassword" prefHeight="41.0" prefWidth="223.0" promptText="User Name" style="-fx-background-color: white;" />
+            <JFXPasswordField fx:id="admPassword" alignment="CENTER" labelFloat="true" layoutX="66.0" layoutY="120.0" onAction="#moveToLogin" prefHeight="41.0" prefWidth="228.0" promptText="Password" style="-fx-background-color: white;" />
+            <JFXButton fx:id="rcptLogin" buttonType="RAISED" contentDisplay="CENTER" layoutX="70.0" layoutY="198.0" onAction="#receptionistLoginOnAction" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #1b7cb8; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="errorMsgIndex" layoutX="81.0" layoutY="162.0" prefHeight="21.0" prefWidth="214.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="749.0" layoutY="14.0" onAction="#backToFirstWindow" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: white;" text="Back" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="10.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="473.0" layoutY="27.0" prefHeight="35.0" prefWidth="118.0" text="Admin">
+         <font>
+            <Font name="Bodoni MT Condensed Italic" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="550.0" fitWidth="453.0" pickOnBounds="true" AnchorPane.rightAnchor="378.0">
+         <image>
+            <Image url="@../asserts/2103.i402.007.F.m004.c9.Hostel%20and%20tourists%20flat%20background.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
